@@ -7,7 +7,31 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+    <div id="ui">
+        <label>Type:</label>
+        <select id="type">
+            <option value="cube">Cube</option>
+            <option value="sphere">Sphere</option>
+            <option value="light">Light</option>
+        </select>
+
+        <label>Position:</label>
+        <input id="x" placeholder="X" type="number" />
+        <input id="y" placeholder="Y" type="number" />
+        <input id="z" placeholder="Z" type="number" />
+
+        <label>Size:</label>
+        <input id="size" type="number" value="1" />
+
+        <label>Color:</label>
+        <input id="color" type="color" value="#ff0000" />
+
+        <button id="add">Add Object</button>
+    </div>
+
   <!-- No canvas needed -->
   <script type="module" src="main.js"></script>
+  <script type="module" src="ui.js"></script>
 </body>
 </html>
